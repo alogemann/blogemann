@@ -1,0 +1,37 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #00509d;
+    font-size: large;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    min-width: 50%;
+    margin-right: 25px;
+}
+
+ul {
+    display: flex;
+}
+
+ li {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 3px;
+}
+
+a:hover {
+    background-color: #ffd500;
+    color: black;
+    border-radius: 5px;
+}

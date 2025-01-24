@@ -1,0 +1,23 @@
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0% 20% 0% 20%;
+    padding: 10px;
+    font-size: large;
+}
+
+.container {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+}
+
+.title {
+    padding: 25px;
+}
+
+.post {
+    padding: 10px; 
+    line-height: 25px;
+}
