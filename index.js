@@ -19,6 +19,11 @@ app.get('/', (req,res) => {
     res.render('home', {posts})
 })
 
+app.get('/posts/:postid', (req, res) => {
+  const { postid } = req.params
+  res.render('post',{postid})
+})
+
 app.listen(3000, () => {
     console.log('listening on port 3000')
 })

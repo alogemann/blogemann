@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog-e-mann</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/partials/nav.css">
-    <link rel="stylesheet" href="styles/views/home.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/partials/nav.css">
 </head>
-<%- include('partials/nav.ejs') %>
 <body>
+    <%- include('partials/nav.ejs') %>
     <div class="content">
-        <div class="container title">
+        <div class="content-head">
             <h1>Andrew Logemann's Baseball Blog</h1>
         </div>
         
-        <div class="container post">
-            <%- include('posts/first_post.ejs') %>
+        <div class="content-body">
+            <div class="content-item">
+                <h3>First Post</h3>
+                <p>Andrew Logemann</p>
+                <p>1/25/2025</p>
+                <a href="posts/<%=posts[0]%>">read more ></a>
+            </div>
+            <div class="content-item">
+                <h3>Second Post</h3>
+                <p>Andrew Logemann</p>
+                <p>1/27/2025</p>
+                <a href="posts/<%=posts[1]%>">read more ></a>
+            </div>
         </div>
         </div>
     </div>
